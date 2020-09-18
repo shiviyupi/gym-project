@@ -3,16 +3,25 @@
 
 <head>
   <style>
+ html, body{
+  
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+  }
     .bg-img {
 
       background-image: url("images/bg1.jpg");
-
-      min-height: 700px;
+      
+      min-height: 315px;
+      width:auto;
 
       /* Center and scale the image nicely */
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
+    box-sizing: border-box;
 
       /* Needed to position the navbar */
       position: relative;
@@ -55,7 +64,7 @@
     #fh {
 
       text-align: center;
-      padding: 120px;
+      padding: 20px;
       font-family: 'Times New Roman', Times, serif;
 color:white;
     }
@@ -67,10 +76,20 @@ color:white;
 
     }
 
+    h1 {
+    display: block;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
     #cd {
       font-family: 'Times New Roman', Times, serif;
       color: black;
-      margin-top: 100px;
+    text-align: center;
+      padding-top: 25px;
     }
 
     #de {
@@ -82,6 +101,7 @@ color:white;
     #pe {
       font-family: 'Times New Roman', Times, serif;
       color: sandybrown;
+
     }
 
     #one {
@@ -124,6 +144,10 @@ color:white;
     .carousel-multi-item-2 .card img {
       border-radius: 2px;
     }
+
+#navs a:hover{
+color:red;
+}
   </style>
   <!-- Required meta tags -->
   <meta charset="utf-8">
@@ -135,25 +159,60 @@ color:white;
   <title>GYM</title>
 </head>
 
-<body>
+<body> 
+<div class="fluid" style="width:100%;">
   <div class="bg-img" id="qw">
     <div class="container1">
       <div class="topnav">
 <center>
-        <a href="#qw"> <strong> HOME </strong></a>
-        <a href="#onw"><strong> PRODUCTS </STRONG></a>
-        <a href="#add"><strong> ADDRESS </STRONG></a>
-        <a href="#idi"><STRONG>CONTACT</STRONG> </a>
-        <a href="#getin"> <STRONG>GET IN TOUCH</STRONG></a> </center>
+
+
+
+<nav class="navbar navbar-expand-lg navbar-dark lg-light " id="navs" >
+  <a class="navbar-brand" href="#home"><STRONG>THE FITNESS CENTER </STRONG></a>
+  <button class="navbar-toggler" type="button"   data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"  >   </span>
+  </button>
+  <div class="collapse navbar-collapse"  id="navbarNavDropdown">
+    <ul class="navbar-nav ">
+      <li class="nav-item active">
+        <a class="nav-link" href="#home"> <STRONG>HOME </STRONG> <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="#onw"> <STRONG>PRODUCTS </STRONG></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="#foot"> <STRONG>ADDRESS </STRONG></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="#heading"> <STRONG>CONTACT </STRONG></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="#getin"> <STRONG>GET IN TOUCH </STRONG></a>
+      </li>
+      
+    </ul>
+  </div>
+</nav>
+</center>
       </div>
+
+
     </div>
+  </div>
+
+</div>
+
+
+
+  
 
     <h1 id="fh"> <strong>  </STRONG> </h1>
 
   </div>
   <div class="container" style="
-  min-height: 700px;">
-    <h1 class="thf" id="cd"><strong> COMPANY'S DESCRIPTION</strong></H1>
+  min-height: 600px;">
+    <h1  id="cd"><strong> COMPANY'S DESCRIPTION</strong></H1>
     <P class="thf" id="de"> <big><strong>
           The Fitness Center is one of the only family-focused clubs in the remote area.
           The center has grown steadily over the past four years. Our clubhouse is 50,000 square feet and our new fitness center is 12,000 square feet.
@@ -162,8 +221,8 @@ color:white;
           The focus of Fitness Center is to keep the whole family involved in the club by exposing everyone to the variety of activities and services the club offers. In addition, there is a childcare center that will keep members' children happy and entertained while members take part in any of the center's activities and services.
 
           Our mainly focused services includes:
-          <ul id="pe">
-            <li>Age </li>
+          <ul type ="square" id="pe">
+            <li >Age </li>
             <li>Bone Structure </li>
             <li>Lifestyle </li>
             <li>Particular Goals </li>
@@ -181,13 +240,13 @@ color:white;
   <div class="fluid">
     <div id="one" style="min-height:750px;">
       <H1 class="thf" id="our"> <strong>OUR STORY</strong> </H1>
-      <p><strong>
+      <p><strong> <big>
           <center> From its beginning in 1996, the Fitness Center has had an exceptional swimming and tennis program.
             <br> Two years ago, a loss in membership pointed toward the need for a fitness center to round out the club's offerings.
             <br> The club spent approximately $140,000 to add a fitness center with cardiovascular and weight training equipment.
             <br> The club has also become a 24-hours facility, seven days a week, with childcare.
         </strong></p>
-      <img id="para" src="images/loh.png"></center>
+      <img id="para" class="img-thumbnail" src="images/loh.png"></center> </big>
 
     </div>
   </div>
@@ -211,7 +270,7 @@ color:white;
                 <div class="modal-body mb-0 p-0">
 
                   <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
-                    <iframe class="embed-responsive-item" src="#" allowfullscreen><strong>Price: Rs 500</strong> </iframe>
+                    <iframe class="embed-responsive-item" src="images/lotion.jpg" allowfullscreen><strong>Price: Rs 500</strong> </iframe>
 
                   </div>
 
@@ -239,7 +298,7 @@ color:white;
           </div>
           <!--Modal: Name-->
 
-          <a><img class="img-fluid z-depth-1" src="images/lotion1.jpg" data-toggle="modal" data-target="#modal1"></a>
+          <a><img class="img-fluid z-depth-1" src="images/lotion.jpg" data-toggle="modal" data-target="#modal1"></a>
 
         </div>
         <!-- Grid column -->
@@ -258,14 +317,14 @@ color:white;
                 <div class="modal-body mb-0 p-0">
 
                   <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
-
+                  <iframe class="embed-responsive-item" src="images/lotion1.jpg" allowfullscreen><strong>Price: Rs 500</strong> </iframe>
                   </div>
 
                 </div>
 
                 <!--Footer-->
                 <div class="modal-footer justify-content-center">
-                  <span class="mr-4">Spread the word!</span>
+                <span class="mr-4"><strong>Price: Rs 500</strong></span>
                   <a type="button" class="btn-floating btn-sm btn-fb"><i class="fab fa-facebook-f"></i></a>
                   <!--Twitter-->
                   <a type="button" class="btn-floating btn-sm btn-tw"><i class="fab fa-twitter"></i></a>
@@ -285,7 +344,7 @@ color:white;
           </div>
           <!--Modal: Name-->
 
-          <a><img class="img-fluid z-depth-1" src="images/lotion3.jpg" data-toggle="modal" data-target="#modal6"></a>
+          <a><img class="img-fluid z-depth-1" src="images/lotion1.jpg" data-toggle="modal" data-target="#modal6"></a>
 
         </div>
         <!-- Grid column -->
@@ -304,14 +363,14 @@ color:white;
                 <div class="modal-body mb-0 p-0">
 
                   <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
-
+                  <iframe class="embed-responsive-item" src="images/lotion3.jpg" allowfullscreen><strong>Price: Rs 500</strong> </iframe>
                   </div>
 
                 </div>
 
                 <!--Footer-->
                 <div class="modal-footer justify-content-center">
-                  <span class="mr-4">Spread the word!</span>
+                <span class="mr-4"><strong>Price: Rs 500</strong></span>
                   <a type="button" class="btn-floating btn-sm btn-fb"><i class="fab fa-facebook-f"></i></a>
                   <!--Twitter-->
                   <a type="button" class="btn-floating btn-sm btn-tw"><i class="fab fa-twitter"></i></a>
@@ -356,14 +415,14 @@ color:white;
                 <div class="modal-body mb-0 p-0">
 
                   <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
-
+                  <iframe class="embed-responsive-item" src="images/lotion7.jpg" allowfullscreen><strong>Price: Rs 500</strong> </iframe>
                   </div>
 
                 </div>
 
                 <!--Footer-->
                 <div class="modal-footer justify-content-center">
-                  <span class="mr-4">Spread the word!</span>
+                <span class="mr-4"><strong>Price: Rs 5000</strong></span>
                   <a type="button" class="btn-floating btn-sm btn-fb"><i class="fab fa-facebook-f"></i></a>
                   <!--Twitter-->
                   <a type="button" class="btn-floating btn-sm btn-tw"><i class="fab fa-twitter"></i></a>
@@ -402,14 +461,14 @@ color:white;
                 <div class="modal-body mb-0 p-0">
 
                   <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
-
+                  <iframe class="embed-responsive-item" src="images/lotion8.jpg" allowfullscreen><strong>Price: Rs 500</strong> </iframe>
                   </div>
 
                 </div>
 
                 <!--Footer-->
                 <div class="modal-footer justify-content-center">
-                  <span class="mr-4">Spread the word!</span>
+                <span class="mr-4"><strong>Price: Rs 6000</strong></span>
                   <a type="button" class="btn-floating btn-sm btn-fb"><i class="fab fa-facebook-f"></i></a>
                   <!--Twitter-->
                   <a type="button" class="btn-floating btn-sm btn-tw"><i class="fab fa-twitter"></i></a>
@@ -448,14 +507,14 @@ color:white;
                 <div class="modal-body mb-0 p-0">
 
                   <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
-
+                  <iframe class="embed-responsive-item" src="images/lo.jpg" allowfullscreen><strong>Price: Rs 500</strong> </iframe>
                   </div>
 
                 </div>
 
                 <!--Footer-->
                 <div class="modal-footer d-block d-md-flex justify-content-center">
-                  <span class="mr-4">Spread the word!</span>
+                <span class="mr-4"><strong>Price: Rs 1000</strong></span>
                   <a type="button" class="btn-floating btn-sm btn-fb"><i class="fab fa-facebook-f"></i></a>
                   <!--Twitter-->
                   <a type="button" class="btn-floating btn-sm btn-tw"><i class="fab fa-twitter"></i></a>
@@ -660,12 +719,19 @@ Prayagraj <br> Uttar Pradesh <br>
   </div>-->
 
   <div class="container" id="getin">
+  <h1 id="getintouch" class="thf" style="width:100%;width: 100%;
+    padding-right: 0px;
+    padding-left: 0px;
+    margin-right: auto;
+    margin-left: 0;
+    min-inline-size: max-content;
+       "> <STRONG>GET IN TOUCH </STRONG></h1>
     <!-- Default form contact -->
     <form class="text-center border border-light p-5" action="action.php" method="post">
-      <fieldset style="border:ridge;">
+      <fieldset style="border:ridge;padding:0px;border:0px;">
 
         <p class="h4 mb-4">
-          <h1 class="thf"> <STRONG>GET IN TOUCH </STRONG></h1>
+        
         </p>
 
         <!-- Name -->
@@ -700,7 +766,7 @@ Prayagraj <br> Uttar Pradesh <br>
   </div>
   <!-- Footer -->
   <div class="fluid">
-    <footer class="page-footer font-small blue pt-4">
+    <footer class="page-footer font-small blue pt-4" id="foot">
 
       <!-- Footer Links -->
       <div class="container-fluid text-center text-md-left">
@@ -789,6 +855,8 @@ Prayagraj <br> Uttar Pradesh <br>
 
     </footer>
   </div>
+</div>
+</div>
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
